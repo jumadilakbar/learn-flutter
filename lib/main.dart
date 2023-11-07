@@ -12,131 +12,243 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // return const Placeholder();
     return MaterialApp(
-      home: Scaffold(
-          appBar: AppBar(
-            title: Text("myAPP"),
-            centerTitle: true,
+        home: Scaffold(
+      appBar: AppBar(
+        title: Text("myAPP"),
+        centerTitle: true,
+      ),
+      // Call function for set widget vertical using Column
+      // Call function for set widget horizontal using Row
+      // Call function for set widget Menumpuk menjadi satu sumbu Z using Stack
+      // SingleChildScrollView digunakan untuk mengatasi batasan batas bawah dan agar kompnen dapat terbaca dengan melakukan scrool komponen untuk widget Column
+      // dengan wwidget Listview maka ukuran kompnen akan menyesuaikan dengan direction nya jika cvertikal maka akan dari atas sampe bawah dan jika horizontal maka akan penuh kesamping
+      body: ListView(
+        scrollDirection: Axis.vertical,
+        children: [
+          Container(
+            height: 100,
+            width: 100,
+            color: Colors.amber,
+            child: Center(child: Text("Kuning")),
           ),
-          // Call function for set widget vertical using Column
-          // Call function for set widget horizontal using Row
-          // Call function for set widget Menumpuk menjadi satu sumbu Z using Stack
-          // SingleChildScrollView digunakan untuk mengatasi batasan batas bawah dan agar kompnen dapat terbaca dengan melakukan scrool komponen untuk widget Column
-          body: SingleChildScrollView(
-            // untuk scrol horizontal ketika menggunakan Row
-            scrollDirection: Axis.horizontal,
-            // child: Column(
-            child: Row(
-              //body: Row(
-              children: [
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.amber,
-                  child: Center(child: Text("Kuning")),
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.black,
-                  // Set Color in text
-                  child: Center(
-                      child: Text(
-                    "Hitam",
-                    style: TextStyle(color: Colors.amber),
-                  )),
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.amber,
-                  child: Center(child: Text("Kuning")),
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.black,
-                  // Set Color in text
-                  child: Center(
-                      child: Text(
-                    "Hitam",
-                    style: TextStyle(color: Colors.amber),
-                  )),
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.amber,
-                  child: Center(child: Text("Kuning")),
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.black,
-                  // Set Color in text
-                  child: Center(
-                      child: Text(
-                    "Hitam",
-                    style: TextStyle(color: Colors.amber),
-                  )),
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.amber,
-                  child: Center(child: Text("Kuning")),
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.black,
-                  // Set Color in text
-                  child: Center(
-                      child: Text(
-                    "Hitam",
-                    style: TextStyle(color: Colors.amber),
-                  )),
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.amber,
-                  child: Center(child: Text("Kuning")),
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.black,
-                  // Set Color in text
-                  child: Center(
-                      child: Text(
-                    "Hitam",
-                    style: TextStyle(color: Colors.amber),
-                  )),
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.amber,
-                  child: Center(child: Text("Kuning")),
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.black,
-                  // Set Color in text
-                  child: Center(
-                      child: Text(
-                    "Hitam",
-                    style: TextStyle(color: Colors.amber),
-                  )),
-                ),
-              ],
-            ),
-          )),
-    );
+          Container(
+            height: 100,
+            width: 100,
+            color: Colors.black,
+            // Set Color in text
+            child: Center(
+                child: Text(
+              "Hitam",
+              style: TextStyle(color: Colors.amber),
+            )),
+          ),
+          Container(
+            height: 100,
+            width: 100,
+            color: Colors.amber,
+            child: Center(child: Text("Kuning")),
+          ),
+          Container(
+            height: 100,
+            width: 100,
+            color: Colors.black,
+            // Set Color in text
+            child: Center(
+                child: Text(
+              "Hitam",
+              style: TextStyle(color: Colors.amber),
+            )),
+          ),
+          Container(
+            height: 100,
+            width: 100,
+            color: Colors.amber,
+            child: Center(child: Text("Kuning")),
+          ),
+          Container(
+            height: 100,
+            width: 100,
+            color: Colors.black,
+            // Set Color in text
+            child: Center(
+                child: Text(
+              "Hitam",
+              style: TextStyle(color: Colors.amber),
+            )),
+          ),
+          Container(
+            height: 100,
+            width: 100,
+            color: Colors.amber,
+            child: Center(child: Text("Kuning")),
+          ),
+          Container(
+            height: 100,
+            width: 100,
+            color: Colors.black,
+            // Set Color in text
+            child: Center(
+                child: Text(
+              "Hitam",
+              style: TextStyle(color: Colors.amber),
+            )),
+          ),
+          Container(
+            height: 100,
+            width: 100,
+            color: Colors.amber,
+            child: Center(child: Text("Kuning")),
+          ),
+          Container(
+            height: 100,
+            width: 100,
+            color: Colors.black,
+            // Set Color in text
+            child: Center(
+                child: Text(
+              "Hitam",
+              style: TextStyle(color: Colors.amber),
+            )),
+          ),
+          Container(
+            height: 100,
+            width: 100,
+            color: Colors.amber,
+            child: Center(child: Text("Kuning")),
+          ),
+          Container(
+            height: 100,
+            width: 100,
+            color: Colors.black,
+            // Set Color in text
+            child: Center(
+                child: Text(
+              "Hitam",
+              style: TextStyle(color: Colors.amber),
+            )),
+          ),
+        ],
+      ),
+    )
+        // Column, Row, and scroolview
+        // body: SingleChildScrollView(
+        //   // untuk scrol horizontal ketika menggunakan Row
+        //   scrollDirection: Axis.horizontal,
+        //   // child: Column(
+        //   child: Row(
+        //     //body: Row(
+        //     children: [
+        //       Container(
+        //         height: 100,
+        //         width: 100,
+        //         color: Colors.amber,
+        //         child: Center(child: Text("Kuning")),
+        //       ),
+        //       Container(
+        //         height: 100,
+        //         width: 100,
+        //         color: Colors.black,
+        //         // Set Color in text
+        //         child: Center(
+        //             child: Text(
+        //           "Hitam",
+        //           style: TextStyle(color: Colors.amber),
+        //         )),
+        //       ),
+        //       Container(
+        //         height: 100,
+        //         width: 100,
+        //         color: Colors.amber,
+        //         child: Center(child: Text("Kuning")),
+        //       ),
+        //       Container(
+        //         height: 100,
+        //         width: 100,
+        //         color: Colors.black,
+        //         // Set Color in text
+        //         child: Center(
+        //             child: Text(
+        //           "Hitam",
+        //           style: TextStyle(color: Colors.amber),
+        //         )),
+        //       ),
+        //       Container(
+        //         height: 100,
+        //         width: 100,
+        //         color: Colors.amber,
+        //         child: Center(child: Text("Kuning")),
+        //       ),
+        //       Container(
+        //         height: 100,
+        //         width: 100,
+        //         color: Colors.black,
+        //         // Set Color in text
+        //         child: Center(
+        //             child: Text(
+        //           "Hitam",
+        //           style: TextStyle(color: Colors.amber),
+        //         )),
+        //       ),
+        //       Container(
+        //         height: 100,
+        //         width: 100,
+        //         color: Colors.amber,
+        //         child: Center(child: Text("Kuning")),
+        //       ),
+        //       Container(
+        //         height: 100,
+        //         width: 100,
+        //         color: Colors.black,
+        //         // Set Color in text
+        //         child: Center(
+        //             child: Text(
+        //           "Hitam",
+        //           style: TextStyle(color: Colors.amber),
+        //         )),
+        //       ),
+        //       Container(
+        //         height: 100,
+        //         width: 100,
+        //         color: Colors.amber,
+        //         child: Center(child: Text("Kuning")),
+        //       ),
+        //       Container(
+        //         height: 100,
+        //         width: 100,
+        //         color: Colors.black,
+        //         // Set Color in text
+        //         child: Center(
+        //             child: Text(
+        //           "Hitam",
+        //           style: TextStyle(color: Colors.amber),
+        //         )),
+        //       ),
+        //       Container(
+        //         height: 100,
+        //         width: 100,
+        //         color: Colors.amber,
+        //         child: Center(child: Text("Kuning")),
+        //       ),
+        //       Container(
+        //         height: 100,
+        //         width: 100,
+        //         color: Colors.black,
+        //         // Set Color in text
+        //         child: Center(
+        //             child: Text(
+        //           "Hitam",
+        //           style: TextStyle(color: Colors.amber),
+        //         )),
+        //       ),
+        //     ],
+        //   ),
+        // )
+        // )
+
+        );
   }
 }
-// Learn Basic Widget 
+// Learn Basic Widget
 // class MyApp extends StatelessWidget {
 //   // const MyApp({super.key});
 //   const MyApp({Key? key}) : super(key: key);
@@ -153,7 +265,7 @@ class MyApp extends StatelessWidget {
 //         ),
 //         // backgroundColor: Colors.blueAccent[100],
 //         /* Create Container and text in Center position in page and box
-//         body: Center( 
+//         body: Center(
 //           child: Container(
 //             width: 200,
 //             height: 50,
@@ -188,7 +300,7 @@ class MyApp extends StatelessWidget {
 //             },
 //             child: Text("Klik Me"),
 //           ),
-          
+
 //           // Call Icon in center position and give color red
 //           child: Icon(
 //             Icons.home,
