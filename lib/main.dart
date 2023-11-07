@@ -44,6 +44,8 @@ class MyApp extends StatelessWidget {
         )),
         */
         body: Center(
+          // call button
+          /*
           child: ElevatedButton(
             onPressed: () {
               // empty function if we not add funtion like print all other funtion
@@ -52,6 +54,17 @@ class MyApp extends StatelessWidget {
             },
             child: Text("Klik Me"),
           ),
+          
+          // Call Icon in center position and give color red
+          child: Icon(
+            Icons.home,
+            size: 200,
+            color: Colors.redAccent[100],
+          ),
+          */
+          // Image Provider
+          // 1. Asset Image -> gambar yang ada pada folder project
+          child: Image(image: AssetImage("assets/sistem.jpg")),
         ),
       ),
     );
