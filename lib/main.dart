@@ -29,12 +29,18 @@ class MyApp extends StatelessWidget {
         ),
         */
         // Create box but position not in center page but text in center on box container
+        /*
         body: Container(
           width: 200,
           height: 50,
           color: Colors.amber,
           child: Center(child: Text('Center in box')),
         ),
+        */
+        body: Center(
+            child: FlutterLogo(
+          size: 200,
+        )),
       ),
     );
   }
