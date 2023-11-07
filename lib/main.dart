@@ -37,10 +37,22 @@ class MyApp extends StatelessWidget {
           child: Center(child: Text('Center in box')),
         ),
         */
-        body: Center(
+        // Call Logo Flutter
+        /*body: Center(
             child: FlutterLogo(
           size: 200,
         )),
+        */
+        body: Center(
+          child: ElevatedButton(
+            onPressed: () {
+              // empty function if we not add funtion like print all other funtion
+              // Call Function
+              print("Gak Bahaya ta");
+            },
+            child: Text("Klik Me"),
+          ),
+        ),
       ),
     );
   }
