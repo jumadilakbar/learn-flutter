@@ -49,6 +49,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// Extraxt Widget  -> Reusable widget
 class ThemeTextColor extends StatelessWidget {
   const ThemeTextColor({
     Key? key,
