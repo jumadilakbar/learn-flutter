@@ -41,27 +41,27 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "Widget Builder",
-            style: TextStyle(color: Colors.black),
-          ),
-          backgroundColor: Colors.amber,
-          centerTitle: true,
-        ),
-        body: ListView.builder(
-          itemCount: 12, // tanpa ini maka list data tidak terbatas
-          itemBuilder: (context, index) => ThemeTextColor(
-            text: "Kotak - ${index + 1}",
-            bycolor: Color.fromARGB(
-              255,
-              Random().nextInt(256),
-              Random().nextInt(256),
-              Random().nextInt(256),
+          appBar: AppBar(
+            title: Text(
+              "my APP",
+              style: TextStyle(color: Colors.black),
             ),
+            backgroundColor: Colors.amber,
           ),
-        ),
-      ),
+          body: GridView(
+            padding: EdgeInsets.all(10),
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3,
+                crossAxisSpacing: 5,
+                mainAxisSpacing: 5,
+                childAspectRatio: 1 / 2),
+            children: data
+                .map(
+                  (e) => ThemeTextColor(text: e["text"], bycolor: e["bycolor"]),
+                )
+                .toList(),
+            // children: allitems,
+          )),
     );
   }
 }
